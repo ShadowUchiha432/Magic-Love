@@ -114,20 +114,19 @@ const RomanticEffect = ({ active, onClose }: RomanticEffectProps) => {
               >
                 <div className="relative w-64 h-64 md:w-80 md:h-80">
                   <AnimatePresence mode="wait">
-                    <motion.img 
+                    <motion.img
                       key={images[messageIndex]}
-                      src={images[messageIndex]} 
+                      src={images[messageIndex]}
                       initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ 
-                        opacity: 1, 
-                        scale: messageIndex === 4 ? -1 : 1, // Mirror the 5th image
-                        scaleY: 1,
-                        filter: 'sepia(0.3) saturate(1.2) brightness(0.85)' // Skin tone adjustment
+                      animate={{
+                        opacity: 1,
+                        scale: 1,
+                        filter: 'sepia(0.3) saturate(1.2) brightness(0.85)'
                       }}
                       exit={{ opacity: 0, scale: 1.1 }}
-                      alt="Boy Magician" 
+                      alt="Boy Magician"
                       className="w-full h-full object-contain drop-shadow-[0_0_40px_rgba(168,85,247,0.8)]"
-                    />
+                      />
                   </AnimatePresence>
                   
                   {/* Floating Magic Orbs */}
