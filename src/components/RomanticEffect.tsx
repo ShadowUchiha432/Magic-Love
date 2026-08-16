@@ -19,11 +19,11 @@ const RomanticEffect = ({ active, onClose }: RomanticEffectProps) => {
   ], []);
 
   const images = [
-    "/boy-magic-1.png", // Stage 1: Wink & Heart
-    "/boy-magic-2.png", // Stage 2: Hearts from Hat
-    "/boy-magic-3.png", // Stage 3: Sparkles
-    "/boy-magician.png", // Stage 4: Surprise
-    "/boy-magic-2.png"  // Stage 5: Celebration (using 2nd with different effect)
+    `${import.meta.env.BASE_URL}boy-magic-1.png`, // Stage 1: Wink & Heart
+    `${import.meta.env.BASE_URL}boy-magic-2.png`, // Stage 2: Hearts from Hat
+    `${import.meta.env.BASE_URL}boy-magic-3.png`, // Stage 3: Sparkles
+    `${import.meta.env.BASE_URL}boy-magician.png`, // Stage 4: Surprise
+    `${import.meta.env.BASE_URL}boy-magic-2.png`  // Stage 5: Celebration
   ];
 
   // Different animations for each step
