@@ -112,7 +112,7 @@ const toggleMusic = () => {
     {
       title: "Hello My Love!",
       subtitle: "You are the center of my universe",
-      image: "/couple-hugging.jpg", // This would be the new image you provided
+      image: `${import.meta.env.BASE_URL}couple-hugging.jpg`,
       message: "Every day I wake up feeling like the luckiest person just because you are in my life.",
       color: "from-pink-400 to-rose-500",
       hasHijab: true
@@ -120,21 +120,21 @@ const toggleMusic = () => {
     {
       title: "I Love You",
       subtitle: "More than words can say",
-      image: "/couple-love.png",
+      image: `${import.meta.env.BASE_URL}couple-love.png`,
       message: "You are my sunshine, my moonlight, and all my stars. I'm so lucky to have you.",
       color: "from-purple-400 to-indigo-500"
     },
     {
       title: "Cheer Up, Girl! ✨",
       subtitle: "I'm always here for you",
-      image: "/couple-cheer-up.png",
+      image: `${import.meta.env.BASE_URL}couple-cheer-up.png`,
       message: "Don't let that beautiful smile fade. I'll always be the one to wipe your tears and hold your hand through anything.",
       color: "from-teal-400 to-blue-500"
     },
     {
       title: "Will You Be Mine? 💍",
       subtitle: "My beautiful girl in pink",
-      image: "/couple-proposal.png",
+      image: `${import.meta.env.BASE_URL}couple-proposal.png`,
       message: "I want to spend every single second of my life making you happy. You are my greatest adventure and my home.",
       color: "from-rose-400 to-red-500",
       hasHijab: true
@@ -142,7 +142,7 @@ const toggleMusic = () => {
     {
       title: "Forever Together",
       subtitle: "Our eternal bond",
-      image: "/couple-forever.png",
+      image: `${import.meta.env.BASE_URL}couple-forever.png`,
       message: "Across every galaxy and through every lifetime, I will always find my way back to you.",
       color: "from-indigo-400 to-purple-600",
       hasHijab: true
