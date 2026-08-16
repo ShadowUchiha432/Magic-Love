@@ -181,7 +181,7 @@ const toggleMusic = () => {
     >
       <audio
       ref={audioRef}
-      src="/Love%20Will%20Remember.mp3"
+      src={`${import.meta.env.BASE_URL}Love Will Remember.mp3`}
       loop
     />
       <SpaceBackground />
