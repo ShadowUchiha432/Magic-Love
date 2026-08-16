@@ -373,7 +373,13 @@ const toggleMusic = () => {
                       src={pages[currentPage].image} 
                       alt="Couple" 
                       className="w-full h-auto object-cover relative z-10" 
-                      style={{ 
+                      onError={(e) => { 
+                        console.log("IMAGE FAILED:", e.currentTarget.src);
+                      }}
+                      onLoad={(e) => {
+                        console.log("IMAGE LOADED:", e.currentTarget.src);
+                      }}
+                      style={{
                         filter: 'sepia(0.3) saturate(1.2) brightness(0.85)',
                       }}
                     />
